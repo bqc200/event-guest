@@ -1,0 +1,21 @@
+<template name="eventPage">
+  <a href="{{pathFor 'eventList'}}">&lt; Back to My Events</a>
+  <div class="row">
+  <div class="col-md-8">
+    <h2>{{title}}</h2>
+    <ul>
+      <li>Organizer: {{organizer}}</li>
+      <li>Location: {{location}}</li>
+      <li>Date: {{date}}</li>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <p>This is the sidebar</p>
+  </div>
+  </div>
+  
+  
+  <div>
+    {{> eventItem}}
+  </div>
+</template>
